@@ -14,13 +14,16 @@ const msgSlot = ref('from parent')
 
     <hr class="divider">
 
-    <h2>Emits</h2>
     <Emits @response="(msg) => childMsg = msg"></Emits>
     <p>{{ childMsg }}</p>
+    <h4>See detail: <a href="https://vuejs.org/tutorial/#step-13" target="_blank">Emits</a></h4>
 
     <hr class="divider">
+
     <h2>Slots</h2>
-    <Slots>Message in child: {{ msgSlot }}</Slots>
+    <Slots><h4>Examples:</h4> Message in child: {{ msgSlot }}</Slots>
+    <h4>See detail: <a href="https://vuejs.org/tutorial/#step-14" target="_blank">Slots</a></h4>
+
   </div>
 </template>
 

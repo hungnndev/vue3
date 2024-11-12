@@ -34,6 +34,7 @@ function removeTodo(todo) {
     <li>We can create a computed ref that computes its <code>.value</code> based on other reactive data sources</li>
     <li>A computed property tracks other reactive state used in its computation as dependencies. It caches the result and automatically updates it when its dependencies change.</li>
   </ul>
+  <h4>Examples:</h4>
   <form @submit.prevent="addTodo">
     <input v-model="newTodo" required placeholder="new todo">
     <button>Add Todo</button>
@@ -48,6 +49,8 @@ function removeTodo(todo) {
   <button @click="hideCompleted = !hideCompleted">
     {{ hideCompleted ? 'Show all' : 'Hide completed' }}
   </button>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-8" target="_blank">Computed Property</a></h4>
+
 </template>
 
 <style>

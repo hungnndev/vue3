@@ -41,6 +41,7 @@ function removeTodo(todo) {
       <div>2. Replace the array with a new one: <code>todos.value = todos.value.filter(/* ... */)</code></div>
     </li>
   </ul>
+  <h4>Examples:</h4>
   <form @submit.prevent="addTodo">
     <input v-model="newTodo" required placeholder="new todo">
     <button>Add Todo</button>
@@ -51,4 +52,6 @@ function removeTodo(todo) {
       <button @click="removeTodo(todo)">X</button>
     </li>
   </ul>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-7" target="_blank">List Rendering</a></h4>
+
 </template>

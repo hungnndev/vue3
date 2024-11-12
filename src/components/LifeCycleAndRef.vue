@@ -26,5 +26,8 @@ onMounted(() => {
     <li><code>onDeactivated()</code> Registers a callback to be called after the component instance is removed from the DOM as part of a tree cached by <code>KeepAlive</code>.</li>
     <li><code>onServerPrefetch()</code>(SSR only) Registers an async function to be resolved before the component instance is to be rendered on the server.</li>
   </ul>
+  <h4>Examples:</h4>
   <p ref="pElementRef">Hello</p>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-9" target="_blank">Lifecycle and Template Refs</a></h4>
+
 </template>

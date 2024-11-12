@@ -15,4 +15,6 @@ const text = ref('')
   <h4>Examples:</h4>
   <input v-model="text" placeholder="Type here">
   <p>{{ text }}</p>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-5" target="_blank">Form Bindings</a></h4>
+
 </template>

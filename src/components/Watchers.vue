@@ -23,8 +23,11 @@ watch(todoId, fetchData)
   <ul>
     <li><code>watch()</code> can directly watch a ref, and the callback gets fired whenever value changes. <code>watch()</code> can also watch other types of data sources</li>
   </ul>
+  <h4>Examples:</h4>
   <p>Todo id: {{ todoId }}</p>
   <button @click="todoId++" :disabled="!todoData">Fetch next todo</button>
   <p v-if="!todoData">Loading...</p>
   <pre v-else>{{ todoData }}</pre>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-10" target="_blank">Watchers</a></h4>
+
 </template>

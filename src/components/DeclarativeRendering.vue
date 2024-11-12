@@ -21,6 +21,7 @@ function increment() {
       <li>Use <code>reactive()</code> for <strong>objects and arrays</strong>, especially when you have nested properties.</li>
     </ul></li>
   </ul>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-2" target="_blank">Declarative Rendering</a></h4>
 
   <hr class="divider">
 
@@ -29,6 +30,7 @@ function increment() {
     <li>In Vue, mustaches are only used for text interpolation. To bind an attribute to a dynamic value, we use the <code>v-bind</code> directive: <code>&lt;div v-bind:id="dynamicId"&gt;&lt;/div&gt;</code></li>
   </ul>
   <div><b>Shorthand:</b> <code>&lt;div :id="dynamicId"&gt;&lt;/div&gt;</code></div>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-3" target="_blank">Attribute Bindings</a></h4>
 
   <hr class="divider">
 
@@ -37,5 +39,8 @@ function increment() {
     <li>We can listen to DOM events using the <code>v-on</code> directive: <code>&lt;button v-on:click="increment"&gt;&#123;&#123; count &#125;&#125;&lt;/button&gt;</code></li>
   </ul>
   <div><b>Shorthand:</b> <code>&lt;button v-on:click="increment"&gt;&#123;&#123; count &#125;&#125;&lt;/button&gt;</code></div>
+  <h4>Examples:</h4>
   <button @click="increment">Count is: {{ count }}</button>
+  <h4>See detail: <a href="https://vuejs.org/tutorial/#step-4" target="_blank">Event Listeners</a></h4>
+
 </template>
