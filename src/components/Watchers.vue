@@ -18,7 +18,11 @@ watch(todoId, fetchData)
 </script>
 
 <template>
+  <hr class="divider">
   <h2>Watchers</h2>
+  <ul>
+    <li><code>watch()</code> can directly watch a ref, and the callback gets fired whenever value changes. <code>watch()</code> can also watch other types of data sources</li>
+  </ul>
   <p>Todo id: {{ todoId }}</p>
   <button @click="todoId++" :disabled="!todoData">Fetch next todo</button>
   <p v-if="!todoData">Loading...</p>

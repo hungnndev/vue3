@@ -28,7 +28,12 @@ function removeTodo(todo) {
 </script>
 
 <template>
+  <hr class="divider">
   <h2>Computed Property</h2>
+  <ul>
+    <li>We can create a computed ref that computes its <code>.value</code> based on other reactive data sources</li>
+    <li>A computed property tracks other reactive state used in its computation as dependencies. It caches the result and automatically updates it when its dependencies change.</li>
+  </ul>
   <form @submit.prevent="addTodo">
     <input v-model="newTodo" required placeholder="new todo">
     <button>Add Todo</button>

@@ -10,10 +10,15 @@ const msgSlot = ref('from parent')
 
 <template>
   <div class="about">
-    <Props msg="Props"></Props>
+    <Props msg="Data from parent"></Props>
+
+    <hr class="divider">
+
     <h2>Emits</h2>
     <Emits @response="(msg) => childMsg = msg"></Emits>
     <p>{{ childMsg }}</p>
+
+    <hr class="divider">
     <h2>Slots</h2>
     <Slots>Message in child: {{ msgSlot }}</Slots>
   </div>

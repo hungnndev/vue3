@@ -1,21 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Props from '@/components/Props.vue'
-import Emits from '@/components/Emits.vue'
-import Slots from '@/components/Slots.vue'
+import Watchers from '@/components/Watchers.vue'
+import LifeCycleAndRef from '@/components/LifeCycleAndRef.vue'
 
-const childMsg = ref('No child msg yet')
-const msgSlot = ref('from parent')
 </script>
 
 <template>
   <div class="about">
-    <Props msg="Props"></Props>
-    <h2>Emits</h2>
-    <Emits @response="(msg) => childMsg = msg"></Emits>
-    <p>{{ childMsg }}</p>
-    <h2>Slots</h2>
-    <Slots>Message in child: {{ msgSlot }}</Slots>
+    <LifeCycleAndRef />
+    <Watchers />
   </div>
 </template>
 
