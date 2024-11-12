@@ -15,14 +15,24 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
-      path: '/basic',
-      name: 'basic',
-      component: () => import('../views/Basic.vue'),
+      path: '/lesson1',
+      name: 'lesson1',
+      component: () => import('../views/Lesson1.vue'),
     },
     {
-      path: '/advanced',
-      name: 'advanced',
-      component: () => import('../views/Advanced.vue'),
+      path: '/lesson2',
+      name: 'lesson2',
+      component: () => import('../views/Lesson2.vue'),
+    },
+    {
+      path: '/lesson3',
+      name: 'lesson3',
+      component: () => import('../views/Lesson3.vue'),
+    },
+    {
+      path: '/lesson4',
+      name: 'lesson4',
+      component: () => import('../views/Lesson4.vue'),
     },
   ],
 })

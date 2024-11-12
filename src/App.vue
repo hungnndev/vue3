@@ -1,20 +1,19 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+<!--    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/basic">Basic</RouterLink>
-        <RouterLink to="/advanced">Advanced</RouterLink>
+        <RouterLink to="/lesson1">Lesson 1</RouterLink>
+        <RouterLink to="/lesson2">Lesson 2</RouterLink>
+        <RouterLink to="/lesson3">Lesson 3</RouterLink>
+        <RouterLink to="/lesson4">Lesson 4</RouterLink>
       </nav>
     </div>
   </header>
@@ -60,9 +59,9 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    //display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    //padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {

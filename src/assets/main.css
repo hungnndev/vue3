@@ -1,10 +1,17 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 2rem;
-  font-weight: normal;
+  /*font-weight: normal;*/
+}
+
+code {
+  white-space: nowrap;
+  background: #eee;
+  padding: 3px 5px;
+  border-radius: 5px;
 }
 
 a,
@@ -15,6 +22,11 @@ a,
   padding: 3px;
 }
 
+.divider {
+  border: 1px solid #222;
+  margin: 20px 0;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
@@ -23,12 +35,12 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    /*display: flex;*/
+    /*place-items: center;*/
   }
 
   #app {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
